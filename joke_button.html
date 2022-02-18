@@ -14,20 +14,6 @@
     border: 5px solid aquamarine;
     border-radius: 12px;
 }
-#btm2{
-    position: relative;
-    background-color: aquamarine;
-    width: 100px;
-    height: 50px;
-    text-align:center;
-    line-height:50px;
-    border: 5px solid aquamarine;
-    border-radius: 12px;
-    transition: border 2s;
-}
-#btm2:hover {
-    border: 50px solid aquamarine;
-}
 </style>
 <script>
 function run(){
@@ -35,7 +21,6 @@ function run(){
     var ll = getRndInteger(0,500);
     document.getElementById("btm").style.top = tt + "px";
     document.getElementById("btm").style.left = ll + "px";
-    document.getElementById("demo").innerHTML = tt + "px" + "," +ll + "px";
 }
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -44,8 +29,6 @@ function getRndInteger(min, max) {
 
 </script>
 <body>
-<a id="demo"></a>
 <div id="btm" onmouseover="run()">按鈕</div>
-<div id="btm2">按鈕</div>
 </body>
 </html>
